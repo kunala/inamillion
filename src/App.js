@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import markjoy from './markjoy.jpeg';
+import markjoy from './markjoy2.jpeg';
 import './App.css';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
