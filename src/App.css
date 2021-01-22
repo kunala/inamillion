@@ -9,6 +9,39 @@ body.view-campaign:before{
     z-index: -1;
 }
 
+.MuiContainer-maxWidthXs  {
+   max-width: 350px;
+}
+
+.MuiButton-root {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /*padding: 7px 105px;*/
+  color: #fff;
+  outline-color: white;
+  outline: 1px;
+
+}
+
+.MuiButton-outlined{
+  border: 1px solid rgba(255, 255, 255, 0.90);
+  padding: 5px 15px;
+}
+
+
+
+.MuiButton-label {
+  color: #fff;
+}
+
+.spot:hover {
+  background-image: linear-gradient(45deg, rgba(30,215,96,1) 30%, rgba(29,185,84,1) 90%);
+}
+
+.apple:hover {
+  background-image: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+
+
 .milli {
   /*text-align: center;*/
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./markjoy.jpeg) no-repeat top center fixed;
@@ -33,9 +66,16 @@ body.view-campaign:before{
   z-index: -1;
 }
 
-h4 {
+.white {
   color: #fff;
 }
+
+
+h3 {
+  color: #fff;
+  font-size: calc(5px + 2vmin);
+}
+
 
 
 .App-logo {
