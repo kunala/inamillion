@@ -45,7 +45,7 @@ function App() {
             }
             </Box>
             
-          <br /><br /><br /><br /><br /><br />x
+          <br /><br /><br /><br /><br /><br />
 
           <Box lineHeight={2} fontWeight="400" fontSize="overline.fontSize" className="white" m={1}>
           MADE WITH ♥ BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
