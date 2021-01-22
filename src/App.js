@@ -73,7 +73,7 @@ function FAQ() {
           But, why not put it to the test? Let's see what we can do together!
           <br /><br />
           3. ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ<br /><br />
-          Apple Music + Spotify next?! I will do my everything I can to make sure you can pre-save by the end of the weekend.
+          Apple Music + Spotify next?! I will do my everything I can to make sure you can pre-save it by the end of the weekend.
           <br /><br />
           4. WAIT, WHO ARE YOU AGAIN?<br /><br />
           Oh, my name is Kunal. I am one of the songwriters and I made the One in a Million video. I work in cyber-security.
