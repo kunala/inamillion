@@ -1,5 +1,5 @@
-import markjoy from './markjoy2.jpeg';
 import './App.css';
+import markjoy from './markjoy2.jpeg';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import 'fontsource-roboto';
@@ -15,7 +15,6 @@ import ReactTypingEffect from 'react-typing-effect';
 function App() {
   return (
     <StylesProvider injectFirst>
-
     <div className="milli">
       <Container maxWidth="xs">
         <Box my={10}>
@@ -43,16 +42,13 @@ function App() {
             </Box>
             
           <br />
-          <Box lineHeight={1} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
+          <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
         text={["384"]} eraseDelay={20000} cursor= "|" typingDelay = {250}
       /></Box>
           <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
           JOINED THE MARKJOY ARMY
           </Box>
-
-
           <br />
-
           <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
           MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
           </Box>
