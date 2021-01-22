@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# One in a Million Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by kunala on React.
 
-## Available Scripts
+You can use this as a pre-save/smartURL look & feel. I made this for the One in a Million song drop, after the website that provides this service broke under too much website load from fans! Pretty cool :-) But we might need something more scalable haha.
 
-In the project directory, you can run:
+## Quick Tips
 
 ### `npm start`
 
