@@ -73,10 +73,10 @@ function FAQ() {
           But, why not put it to the test? Let's see what we can do together!
           <br /><br />
           3. ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ<br /><br />
-          Break Apple Music + Spotify next?! I will do my everything I can to make sure you can pre-save One in a Million by the end of the weekend.
+          Apple Music + Spotify next?! I will do my everything I can to make sure you can pre-save One in a Million by the end of the weekend.
           <br /><br />
           4. WAIT, WHO ARE YOU AGAIN?<br /><br />
-          Oh, my name is Kunal. I am one of the songwriters and I made the One in a Million animated music video. I work in cyber-security.
+          Oh, my name is Kunal. I am one of the songwriters and I made the One in a Million video. I work in cyber-security.
           <br /><br />
           5. YES. WE KNOW KUNALA. NOW, SPOILER?<br /><br />
           👹&nbsp;&nbsp;&nbsp;There is one on this page.
