@@ -8,7 +8,7 @@ import { StylesProvider } from "@material-ui/core/styles";
 import { Icon } from '@iconify/react';
 import spotifyIcon from '@iconify-icons/mdi/spotify';
 import appleMusic from '@iconify-icons/cib/apple-music';
-import LinkE from '@material-ui/core/Link';
+import Link from '@material-ui/core/Link';
 import ReactTypingEffect from 'react-typing-effect';
 import {
   BrowserRouter as Router,
@@ -76,7 +76,7 @@ function FAQ() {
           Apple Music + Spotify next?! I will do my everything I can to make sure you can pre-save it by the end of the weekend.
           <br /><br />
           4. WAIT, WHO ARE YOU AGAIN?<br /><br />
-          Oh, my name is Kunal. I am one of the songwriters and I made the One in a Million video. I work in cyber-security.
+          Oh, my name is Kunal Agarwal. I am one of the songwriters and I made the One in a Million video. I work in cyber-security.
           <br /><br />
           5. YES. WE KNOW KUNALA. NOW, SPOILER?<br /><br />
           👹&nbsp;&nbsp;&nbsp;There is one on this page.
@@ -91,7 +91,7 @@ function FAQ() {
           </Box>
           <br />
           <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
-          MADE WITH <span className="red">♥</span> BY @<LinkE href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></LinkE>
+          MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
           </Box>
           </center>
           
@@ -124,7 +124,7 @@ function Home() {
           Disable elevation
           </Button>*/}
             <Box m={1}>
-              <Button variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
+              <Button href="#" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
             </Box>
 
             <Box m={1}>
@@ -141,7 +141,7 @@ function Home() {
           </Box>
           <br />
           <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
-          MADE WITH <span className="red">♥</span> BY @<LinkE href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></LinkE>
+          MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
           </Box>
 
           </center>
