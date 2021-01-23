@@ -134,10 +134,10 @@ function Home() {
             
           <br />
           <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
-        text={["384"]} eraseDelay={20000} cursor= "|" typingDelay = {250}
+        text={["783783"]} eraseDelay={20000} cursor= "|" typingDelay = {250}
       /></Box>
           <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
-          JOINED THE MARKJOY ARMY
+          HAVE SAVED ONE IN A MILLION
           </Box>
           <br />
           <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
