@@ -16,27 +16,12 @@ import {
   Route
 } from "react-router-dom";
 
+
+
 function App() {
   return(
     <Router>
-      <Switch>
-        <Route path="/home">
-        <Home />
-        </Route>
-        
-        <Route path="/">
-        
-        <FAQ />
-        </Route>
-      </Switch>
 
-    </Router>
-
-    );
-}
-
-function FAQ() {
-  return (
     <StylesProvider injectFirst>
     <div className="milli">
       <Container maxWidth="xs">
@@ -52,18 +37,42 @@ function FAQ() {
           The 🔥&nbsp; returns this weekend.
           </Box>
           </center>
-          
-          {/*<Button variant="contained" color="primary" disableElevation>
-          Disable elevation
-          </Button>*/}
-           
-          {/*<center>
-          <Box lineHeight={1} fontWeight="600" fontSize="Button.fontSize" className="white" m={1}>
-          TUDO BOM? ÇA VA? WSUP?
-          </Box> 
-          </center>*/}
 
-          <Box lineHeight={1.3} fontWeight="600" fontSize="caption.fontSize" className="white" m={1}>
+          <Switch>
+            <Route path="/about">
+            <About />
+            </Route>
+
+            <Route path="/" >
+            <About />
+            </Route>
+          </Switch>
+
+          <center>
+          <br />
+          <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
+        text={["10278"]} eraseDelay={20000} cursor= "|" typingDelay = {250} /></Box>
+          <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
+          HAVE SAVED ONE IN A MILLION
+          </Box>
+          <br />
+          <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
+          MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
+          </Box>
+          </center>
+          
+        </Box>
+      </Container>    
+    </div>
+    </StylesProvider>
+    </Router>
+
+    );
+}
+
+function About(){
+  return(
+    <Box lineHeight={1.3} fontWeight="600" fontSize="caption.fontSize" className="white" m={1}>
           1. TUDO BOM? ÇA VA? WSUP?<br /><br />
           Well, in true AHGASE fashion, you broke the link. There were over 20,000 hits per second.
           Very few people were actually able to get through. And, then, their website died. 😇 <br />
@@ -82,76 +91,56 @@ function FAQ() {
           <br /><br />
           5. YES. WE KNOW KUNALA. NOW, SPOILER?<br /><br />
           👹&nbsp;&nbsp;&nbsp;There is one on this page.
-          </Box>
+    </Box>
 
-          <center>
-          <br />
-          <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
-        text={["10278"]} eraseDelay={20000} cursor= "|" typingDelay = {250} /></Box>
-          <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
-          JOINED THE MARKJOY FANDOM
-          </Box>
-          <br />
-          <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
-          MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
-          </Box>
-          </center>
-          
-        </Box>
-      </Container>    
-    </div>
-    </StylesProvider>
   );
 }
 
 
-function Home() {
-  return (
-    <StylesProvider injectFirst>
-    <div className="milli">
-      <Container maxWidth="xs">
-        <Box my={10}>
-
-          <center>
-            <img src={markjoy} width="100%"/>
-            
-          <Box lineHeight={2} fontWeight="900" fontSize="h6.fontSize" className="white" m={1}>
-          ONE IN A MILLION
-          </Box>
-          <Box lineHeight={1} fontWeight="700" fontSize="body1.fontSize" className="white" m={1}>
-          Releasing 12 February
-          </Box>
-          <br />
-          {/*<Button variant="contained" color="primary" disableElevation>
-          Disable elevation
-          </Button>*/}
-            <Box m={1}>
-              <Button href="https://accounts.spotify.com/authorize?client_id=22ed6c5a182a45ee9f012a1a735edc80&response_type=code&redirect_uri=https://inamillion.io/spotify&scope=user-follow-modify+user-library-modify+user-library-read+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private%20user-read-email&state=34fFs29kd09" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
-            </Box>
-
-            <Box m={1}>
-              <Button variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;Preadd</Button>
-            
-            </Box>
-            
-          <br />
-          <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
-        text={["783783"]} eraseDelay={20000} cursor= "|" typingDelay = {250}
-      /></Box>
-          <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
-          HAVE SAVED ONE IN A MILLION
-          </Box>
-          <br />
-          <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
-          MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
-          </Box>
-
-          </center>
-        </Box>
-      </Container>    
-    </div>
-    </StylesProvider>
+function Presave(){
+  return(
+  <div>
+    <br />
+    <Box m={1}>
+      <Button href="https://accounts.spotify.com/authorize?client_id=22ed6c5a182a45ee9f012a1a735edc80&response_type=code&redirect_uri=https://inamillion.io/spotify&scope=user-follow-modify+user-library-modify+user-library-read+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private%20user-read-email&state=34fFs29kd09" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
+    </Box>
+    <Box m={1}>
+      <Button variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;Preadd</Button>
+    </Box>
+  </div>
   );
 }
+
+function Thankyou(){
+  return(
+  <div>
+    <br />
+    <Box m={1}>
+      <Button href="https://accounts.spotify.com/authorize?client_id=22ed6c5a182a45ee9f012a1a735edc80&response_type=code&redirect_uri=https://inamillion.io/spotify&scope=user-follow-modify+user-library-modify+user-library-read+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private%20user-read-email&state=34fFs29kd09" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
+    </Box>
+    <Box m={1}>
+      <Button variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;Preadd</Button>
+    </Box>
+  </div>
+  );
+}
+
+
+function Play(){
+  return(
+  <div>
+    <br />
+    <Box m={1}>
+      <Button href="#" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;SPOTIFY</Button>
+    </Box>
+    <Box m={1}>
+      <Button href="#" variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;APPLE MUSIC</Button>
+    </Box>
+  </div>
+  );
+}
+
+
+
 
 export default App;
