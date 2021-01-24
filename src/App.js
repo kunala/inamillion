@@ -13,8 +13,11 @@ import ReactTypingEffect from 'react-typing-effect';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
+import { useHistory } from "react-router"
+
 
 
 
@@ -46,6 +49,10 @@ function App() {
             <About />
             </Route>
 
+            <Route path="/presave">
+            <Presave />
+            </Route>
+
             <Route path="/" >
             <About />
             </Route>
@@ -56,7 +63,7 @@ function App() {
           <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
         text={["10278"]} eraseDelay={20000} cursor= "|" typingDelay = {250} /></Box>
           <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
-          HAVE SAVED ONE IN A MILLION.
+          HAVE SAVED ONE IN A MILLION
           </Box>
           <br />
           <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
@@ -69,9 +76,49 @@ function App() {
     </div>
     </StylesProvider>
     </Router>
-
     );
 }
+
+function Presave(){
+  let history = useHistory()
+  function presaveApple(){
+    let music = window.MusicKit.getInstance();
+    music.authorize().then( () => {
+      var musicUserToken = music.musicUserToken;
+      if (typeof musicUserToken !== typeof undefined && musicUserToken != '') {
+        console.log("musicUserToken Acquired");
+        console.log(musicUserToken);
+        console.log("TODO: send to backend");
+        history.push("/thankyou");      
+      }else {
+      console.log("eek something bad happened with apple music user token.")    
+      }
+    });
+  }
+
+  return(
+  <div>
+  <center>
+  <Box lineHeight={2} fontWeight="700" fontSize="body1.fontSize" className="white" >
+  Are you ready 🔥?
+  </Box>
+  </center>
+
+    <br />
+    <Box m={1}>
+      <Button href="https://accounts.spotify.com/authorize?client_id=22ed6c5a182a45ee9f012a1a735edc80&response_type=code&redirect_uri=https://inamillion.io/spotify&scope=user-follow-modify+user-library-modify+user-library-read+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private%20user-read-email&state=34fFs29kd09" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
+    </Box>
+    <Box m={1}>
+      <Button onClick={presaveApple} variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;Preadd</Button>
+    </Box>
+
+  </div>
+  );
+
+
+}
+
+
 
 function Thankyou(){
   return(
@@ -81,8 +128,9 @@ function Thankyou(){
       🙌
       </Box>
       <Box lineHeight={1.3} fontWeight="700" fontSize="body1.fontSize" className="white" m={1}>
-      ALL DONE - IT WILL BE SAVED.<br />
-      SEE YOU ON FEB 12
+      THANK YOU SO MUCH!<br />
+      IT'LL BE AUTO-SAVED INTO YOUR LIBRARY ON FEB 12<br />
+      SEE YOU ON THE OTHER SIDE 🤫
       </Box>
       <Box lineHeight={2} fontWeight="700" fontSize="h4.fontSize" className="white" >
       🙏
@@ -124,30 +172,6 @@ function About(){
 </div>
   );
 }
-
-
-function Presave(){
-  return(
-    <div>
-  <center>
-  <Box lineHeight={2} fontWeight="700" fontSize="body1.fontSize" className="white" >
-  Are you ready 🔥?
-  </Box>
-  </center>
-
-    <br />
-    <Box m={1}>
-      <Button href="https://accounts.spotify.com/authorize?client_id=22ed6c5a182a45ee9f012a1a735edc80&response_type=code&redirect_uri=https://inamillion.io/spotify&scope=user-follow-modify+user-library-modify+user-library-read+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private%20user-read-email&state=34fFs29kd09" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
-    </Box>
-    <Box m={1}>
-      <Button variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;Preadd</Button>
-    </Box>
-  </div>
-  );
-}
-
-
-
 
 function Play(){
   return(
