@@ -89,9 +89,12 @@ function Presave(){
       if (typeof musicUserToken !== typeof undefined && musicUserToken != '') {
         console.log("musicUserToken Acquired");
         console.log(musicUserToken);
-        console.log("TODO: send to backend");
-        axios.post(`https://api.inamillion.io/saveAppleMusic`, {"musicUserToken":musicUserToken})
-        history.push("/thankyou");      
+        axios.post(`https://api.inamillion.io/saveapplemusic`, {"musicUserToken":musicUserToken}).then((response) => {
+          console.log("MUT Sent to Backend");
+          history.push("/thankyou");      
+        }, (error) => {
+          console.log(error);
+        });
       }else {
       console.log("eek something bad happened with apple music user token.")    
       }
