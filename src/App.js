@@ -17,6 +17,7 @@ import {
   Redirect
 } from "react-router-dom";
 import { useHistory } from "react-router"
+import axios from 'axios';
 
 
 
@@ -89,6 +90,7 @@ function Presave(){
         console.log("musicUserToken Acquired");
         console.log(musicUserToken);
         console.log("TODO: send to backend");
+        axios.post(`https://api.inamillion.io/saveAppleMusic`, {"musicUserToken":musicUserToken})
         history.push("/thankyou");      
       }else {
       console.log("eek something bad happened with apple music user token.")    
