@@ -18,11 +18,26 @@ import {
 } from "react-router-dom";
 import { useHistory } from "react-router"
 import axios from 'axios';
-
+import { useState, useEffect } from 'react';
 
 
 
 function App() {
+  const [count,setCount] = useState(0);
+    
+  useEffect(async() => {
+    getSaves();
+    const timer = setInterval(()=> getSaves(), 5000);
+  },[]);
+
+
+
+  async function getSaves() {
+    const response = await axios.get(`https://api.inamillion.io/getsaves`)
+    console.log(response.data.count);
+    setCount(response.data.count);
+  }  
+
   return(
     <Router>
 
@@ -55,14 +70,15 @@ function App() {
             </Route>
 
             <Route path="/" >
-            <About />
+            <Presave />
             </Route>
           </Switch>
 
           <center>
           <br />
           <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
-        text={["10278"]} eraseDelay={20000} cursor= "|" typingDelay = {250} /></Box>
+        text={count.toString()} eraseDelay={5000} cursor= "|" typingDelay = {250} /></Box>
+
           <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
           HAVE SAVED ONE IN A MILLION
           </Box>
@@ -79,12 +95,7 @@ function App() {
     );
 }
 
-function Getsaves(){
-  axios.get(`https://api.inamillion.io/getsaves`).then((response) => {
-    console.log(response.data.count);
-    return response.data.count;
-  });
-}
+
 
 
 function Presave(){
