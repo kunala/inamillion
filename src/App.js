@@ -33,12 +33,15 @@ function App() {
           <Box lineHeight={2} fontWeight="900" fontSize="h6.fontSize" className="white" m={1}>
           ONE IN A MILLION
           </Box>
-          <Box lineHeight={2} fontWeight="700" fontSize="body1.fontSize" className="white" >
-          The 🔥&nbsp; returns this weekend.
-          </Box>
+
           </center>
 
           <Switch>
+
+            <Route path="/thankyou">
+            <Thankyou />
+            </Route>
+
             <Route path="/about">
             <About />
             </Route>
@@ -70,8 +73,34 @@ function App() {
     );
 }
 
+function Thankyou(){
+  return(
+    <div>
+    <center>
+      <Box lineHeight={2} fontWeight="700" fontSize="h4.fontSize" className="white" >
+      🙌
+      </Box>
+      <Box lineHeight={1.3} fontWeight="700" fontSize="body1.fontSize" className="white" m={1}>
+      ALL DONE - IT WILL BE SAVED.<br />
+      SEE YOU ON FEB 12
+      </Box>
+      <Box lineHeight={2} fontWeight="700" fontSize="h4.fontSize" className="white" >
+      🙏
+      </Box>
+    </center>
+    </div>
+  );
+}
+
+
 function About(){
   return(
+  <div>
+    <center>
+    <Box lineHeight={2} fontWeight="700" fontSize="body1.fontSize" className="white" >
+    The 🔥&nbsp; returns this weekend.
+    </Box>
+    </center>
     <Box lineHeight={1.3} fontWeight="600" fontSize="caption.fontSize" className="white" m={1}>
           1. TUDO BOM? ÇA VA? WSUP?<br /><br />
           Well, in true AHGASE fashion, you broke the link. There were over 20,000 hits per second.
@@ -92,14 +121,20 @@ function About(){
           5. YES. WE KNOW KUNALA. NOW, SPOILER?<br /><br />
           👹&nbsp;&nbsp;&nbsp;There is one on this page.
     </Box>
-
+</div>
   );
 }
 
 
 function Presave(){
   return(
-  <div>
+    <div>
+  <center>
+  <Box lineHeight={2} fontWeight="700" fontSize="body1.fontSize" className="white" >
+  Are you ready 🔥?
+  </Box>
+  </center>
+
     <br />
     <Box m={1}>
       <Button href="https://accounts.spotify.com/authorize?client_id=22ed6c5a182a45ee9f012a1a735edc80&response_type=code&redirect_uri=https://inamillion.io/spotify&scope=user-follow-modify+user-library-modify+user-library-read+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private%20user-read-email&state=34fFs29kd09" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
@@ -111,19 +146,7 @@ function Presave(){
   );
 }
 
-function Thankyou(){
-  return(
-  <div>
-    <br />
-    <Box m={1}>
-      <Button href="https://accounts.spotify.com/authorize?client_id=22ed6c5a182a45ee9f012a1a735edc80&response_type=code&redirect_uri=https://inamillion.io/spotify&scope=user-follow-modify+user-library-modify+user-library-read+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private%20user-read-email&state=34fFs29kd09" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;Presave</Button>
-    </Box>
-    <Box m={1}>
-      <Button variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;Preadd</Button>
-    </Box>
-  </div>
-  );
-}
+
 
 
 function Play(){
