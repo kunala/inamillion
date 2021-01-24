@@ -71,7 +71,6 @@ function App() {
           MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
           </Box>
           </center>
-          
         </Box>
       </Container>    
     </div>
@@ -79,6 +78,14 @@ function App() {
     </Router>
     );
 }
+
+function Getsaves(){
+  axios.get(`https://api.inamillion.io/getsaves`).then((response) => {
+    console.log(response.data.count);
+    return response.data.count;
+  });
+}
+
 
 function Presave(){
   let history = useHistory()
