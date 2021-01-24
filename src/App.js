@@ -69,6 +69,10 @@ function App() {
             <Presave />
             </Route>
 
+            <Route path="/faq">
+            <Faq />
+            </Route>
+
             <Route path="/" >
             <Presave />
             </Route>
@@ -83,8 +87,11 @@ function App() {
           HAVE SAVED ONE IN A MILLION
           </Box>
           <br />
-          <Box lineHeight={2} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
+          <Box lineHeight={1.5} fontWeight="300" fontSize="overline.fontSize" className="white" m={1}>
           MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
+          </Box>
+          <Box lineHeight={1} fontWeight="400" fontSize="overline.fontSize" className="white" >
+            <Link href="/faq" color="inherit"><u>FAQ</u></Link>
           </Box>
           </center>
         </Box>
@@ -147,19 +154,50 @@ function Thankyou(){
   return(
     <div>
     <center>
-      <Box lineHeight={2} fontWeight="700" fontSize="h4.fontSize" className="white" >
+      <Box lineHeight={1} fontWeight="700" fontSize="h4.fontSize" className="white" >
       🙌
       </Box>
       <Box lineHeight={1.3} fontWeight="700" fontSize="body1.fontSize" className="white" m={1}>
       THANK YOU SO MUCH!<br />
-      IT'LL BE AUTO-SAVED INTO YOUR LIBRARY ON FEB 12<br />
+      IT'LL AUTO-SAVE INTO YOUR LIBRARY ON FEB 12<br />
       SEE YOU ON THE OTHER SIDE 🤫
       </Box>
-      <Box lineHeight={2} fontWeight="700" fontSize="h4.fontSize" className="white" >
-      🙏
+      <Box lineHeight={1} fontWeight="700" fontSize="h4.fontSize" className="white" >
+      🙏<br />
       </Box>
     </center>
     </div>
+  );
+}
+
+function Faq(){
+  return(
+  <div>
+    <center>
+    <Box lineHeight={2} fontWeight="700" fontSize="body1.fontSize" className="white" >
+    FAQ&nbsp;🤔
+    </Box>
+    </center>
+    <Box lineHeight={1.3} fontWeight="600" fontSize="caption.fontSize" className="white" m={1}>
+          1. SARANGHAE<br /><br />
+          Well, in true AHGASE fashion, you broke the original link (20K+ people per second!).
+          So I hand-made a new one, just for you.<br />
+          <br />
+          2. 화이팅 | FIGHTING<br /><br />
+          We pour our hearts + souls into every part of this, and cannot wait for you to hear it. Let's get to one million together!
+          <br /><br />
+          3. WAIT, WHO ARE YOU AGAIN?<br /><br />
+          Oh, my name is Kunal Agarwal. I am one of the songwriters and I made the One in a Million video. I work in cyber-security.
+          <br /><br />
+          4. YES. WE KNOW KUNALA. NOW, SPOILER?<br /><br />
+          👹&nbsp;&nbsp;&nbsp;There is still one in this page.
+    </Box>
+    <center>
+    <Box lineHeight={1} fontWeight="400" fontSize="overline.fontSize" className="white" >
+      <Link href="/" color="inherit"><u>BACK</u></Link>
+    </Box>
+    </center>
+</div>
   );
 }
 
