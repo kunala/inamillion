@@ -261,7 +261,7 @@ function Play(){
       <Button href="https://youtube.com/c/marktuan" variant="outlined" className="youtube" fullWidth><Icon icon={youtube} height="20" />&nbsp;&nbsp;&nbsp;YOUTUBE</Button>
     </Box>
     <Box m={1}>
-      <Button href="melon.com/artist/timeline.htm?artistId=751070" variant="outlined" className="melon" fullWidth>MELON</Button>
+      <Button href="https://melon.com/artist/timeline.htm?artistId=751070" variant="outlined" className="melon" fullWidth>MELON</Button>
     </Box>
     
   </div>
