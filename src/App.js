@@ -8,6 +8,8 @@ import { StylesProvider } from "@material-ui/core/styles";
 import { Icon } from '@iconify/react';
 import spotifyIcon from '@iconify-icons/mdi/spotify';
 import appleMusic from '@iconify-icons/cib/apple-music';
+import youtube from '@iconify-icons/cib/youtube';
+import tiktok from '@iconify-icons/cib/tiktok';
 import Link from '@material-ui/core/Link';
 import ReactTypingEffect from 'react-typing-effect';
 import {
@@ -56,6 +58,9 @@ function App() {
           </center>
 
           <Switch>
+            <Route path="/play">
+            <Play />
+            </Route>
 
             <Route path="/thankyou">
             <Thankyou />
@@ -237,13 +242,28 @@ function About(){
 function Play(){
   return(
   <div>
+  <center>
+  <Box lineHeight={2} fontWeight="700" fontSize="body1.fontSize" className="white" >
+  The 🔥&nbsp; is here:
+  </Box>
+  </center>
     <br />
     <Box m={1}>
-      <Button href="#" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;SPOTIFY</Button>
+      <Button href="https://open.spotify.com/track/1dkhx3oH7UVYnWaVCPSQY7" variant="outlined" className="spot" fullWidth><Icon icon={spotifyIcon} height="25" />&nbsp;&nbsp;SPOTIFY</Button>
     </Box>
     <Box m={1}>
-      <Button href="#" variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;APPLE MUSIC</Button>
+      <Button href="https://music.apple.com/us/album/one-in-a-million-single/1524931486?ls=1" variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;APPLE MUSIC</Button>
     </Box>
+    <Box m={1}>
+      <Button href="https://tiktok.com" variant="outlined" className="tiktok" fullWidth><Icon icon={tiktok} height="20" />&nbsp;&nbsp;&nbsp;TIKTOK</Button>
+    </Box>
+    <Box m={1}>
+      <Button href="https://youtube.com/c/marktuan" variant="outlined" className="youtube" fullWidth><Icon icon={youtube} height="20" />&nbsp;&nbsp;&nbsp;YOUTUBE</Button>
+    </Box>
+    <Box m={1}>
+      <Button href="melon.com/artist/timeline.htm?artistId=751070" variant="outlined" className="melon" fullWidth>MELON</Button>
+    </Box>
+    
   </div>
   );
 }
