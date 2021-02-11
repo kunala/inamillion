@@ -27,7 +27,7 @@ import { useState, useEffect } from 'react';
 function App() {
   const [count,setCount] = useState(0);
     
-  useEffect(async() => {
+  {/*useEffect(async() => {
     getSaves();
     const timer = setInterval(()=> getSaves(), 5000);
   },[]);
@@ -38,7 +38,7 @@ function App() {
     const response = await axios.get(`https://api.inamillion.io/getsaves`)
     console.log(response.data.count);
     setCount(response.data.count);
-  }  
+  }  */}
 
   return(
     <Router>
