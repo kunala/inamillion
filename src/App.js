@@ -263,7 +263,9 @@ function Play(){
     <Box m={1}>
       <Button href="https://melon.com/artist/timeline.htm?artistId=751070" variant="outlined" className="melon" fullWidth>MELON</Button>
     </Box>
-    
+    <Box m={1}>
+      <Button href="https://www.genie.co.kr/" variant="outlined" className="genie" fullWidth>GENIE</Button>
+    </Box>
   </div>
   );
 }
