@@ -58,7 +58,7 @@ function App() {
           </center>
 
           <Switch>
-            <Route path="/play">
+            <Route path="/">
             <Play />
             </Route>
 
@@ -78,20 +78,20 @@ function App() {
             <Faq />
             </Route>
 
-            <Route path="/" >
+            <Route path="/presave" >
             <Presave />
             </Route>
           </Switch>
 
           <center>
           <br />
-          <Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
+          {/*<!--<Box lineHeight={1.2} fontWeight="600" fontSize="h3.fontSize" className="white" m={1}><ReactTypingEffect
         text={count.toString()} eraseDelay={5000} cursor= "|" typingDelay = {250} /></Box>
 
           <Box lineHeight={.1} fontWeight="400" fontSize="Button.fontSize" className="white" m={1}>
           HAVE SAVED ONE IN A MILLION
-          </Box>
-          <br />
+          </Box><br />-->*/}
+          
           <Box lineHeight={1.5} fontWeight="400" fontSize="overline.fontSize" className="white" m={1}>
           MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
           </Box>
