@@ -96,7 +96,7 @@ function App() {
           MADE WITH <span className="red">♥</span> BY @<Link href="https://instagram.com/kunala" color="inherit"><u>KUNALA</u></Link>
           </Box>
           <Box lineHeight={1} fontWeight="300" fontSize="overline.fontSize" className="white" >
-            <Link href="/faq" color="inherit"><u>FAQ</u></Link>
+            <Link href="/faq" color="inherit">LINKS UPDATE AS THEY BECOME AVAILABLE</Link>
           </Box>
           </center>
         </Box>
