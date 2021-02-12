@@ -255,7 +255,7 @@ function Play(){
       <Button href="https://music.apple.com/us/album/one-in-a-million-single/1524931486?ls=1" variant="outlined" className="apple" fullWidth><Icon icon={appleMusic} height="20" />&nbsp;&nbsp;&nbsp;APPLE MUSIC</Button>
     </Box>
     <Box m={1}>
-      <Button href="https://tiktok.com" variant="outlined" className="tiktok" fullWidth><Icon icon={tiktok} height="20" />&nbsp;&nbsp;&nbsp;TIKTOK</Button>
+      <Button href="https://vm.tiktok.com/ZMeRwF3Jw/" variant="outlined" className="tiktok" fullWidth><Icon icon={tiktok} height="20" />&nbsp;&nbsp;&nbsp;TIKTOK</Button>
     </Box>
     <Box m={1}>
       <Button href="https://youtube.com/c/marktuan" variant="outlined" className="youtube" fullWidth><Icon icon={youtube} height="20" />&nbsp;&nbsp;&nbsp;YOUTUBE</Button>
