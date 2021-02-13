@@ -258,7 +258,7 @@ function Play(){
       <Button href="https://vm.tiktok.com/ZMeRwF3Jw/" variant="outlined" className="tiktok" fullWidth><Icon icon={tiktok} height="20" />&nbsp;&nbsp;&nbsp;TIKTOK</Button>
     </Box>
     <Box m={1}>
-      <Button href="https://youtube.com/c/marktuan" variant="outlined" className="youtube" fullWidth><Icon icon={youtube} height="20" />&nbsp;&nbsp;&nbsp;YOUTUBE (Premiere Soon)</Button>
+      <Button href="https://www.youtube.com/watch?v=Jh_cYFlcjUM" variant="outlined" className="youtube" fullWidth><Icon icon={youtube} height="20" />&nbsp;&nbsp;&nbsp;YOUTUBE</Button>
     </Box>
     <Box m={1}>
       <Button href="https://www.melon.com/album/detail.htm?albumId=10563111" variant="outlined" className="melon" fullWidth>MELON</Button>
