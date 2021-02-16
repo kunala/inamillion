@@ -264,7 +264,7 @@ function Play(){
       <Button href="https://www.melon.com/album/detail.htm?albumId=10563111" variant="outlined" className="melon" fullWidth>MELON</Button>
     </Box>
     <Box m={1}>
-      <Button href="https://www.genie.co.kr/" variant="outlined" className="genie" fullWidth>GENIE (Coming Soon)</Button>
+      <Button href="https://www.genie.co.kr/detail/songInfo?xgnm=92260563" variant="outlined" className="genie" fullWidth>GENIE</Button>
     </Box>
   </div>
   );
